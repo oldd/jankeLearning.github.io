@@ -17,19 +17,19 @@
 
     // create an array with edges
     var edges = new vis.DataSet([
-        {from: 00, to: 01},
-        {from: 01, to: 02},
-        {from: 01, to: 03},
-        {from: 02, to: 04},
-        {from: 03, to: 05},
-        {from: 04, to: 05},
-        {from: 04, to: 06},
-        {from: 05, to: 07},
-        {from: 06, to: 07},
-        {from: 06, to: 11},
-        {from: 07, to: 08},
-        {from: 07, to: 09},
-        {from: 07, to: 10}
+        {from: 00, to: 01, arrows: 'to'},
+        {from: 01, to: 02, arrows: 'to'},
+        {from: 01, to: 03, arrows: 'to'},
+        {from: 02, to: 04, arrows: 'to'},
+        {from: 03, to: 05, arrows: 'to'},
+        {from: 04, to: 05, arrows: 'to'},
+        {from: 04, to: 06, arrows: 'to'},
+        {from: 05, to: 07, arrows: 'to'},
+        {from: 06, to: 07, arrows: 'to'},
+        {from: 06, to: 11, arrows: 'to'},
+        {from: 07, to: 08, arrows: 'to'},
+        {from: 07, to: 09, arrows: 'to'},
+        {from: 07, to: 10, arrows: 'to'}
     ]);
 
     // create a network
