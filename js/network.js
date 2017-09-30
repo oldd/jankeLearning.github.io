@@ -17,10 +17,19 @@ window.onload = function() {
 
     // create an array with edges
     var edges = new vis.DataSet([
-        {from: 1, to: 3},
-        {from: 1, to: 2},
-        {from: 2, to: 4},
-        {from: 2, to: 5}
+        {from: 00, to: 01},
+        {from: 01, to: 02},
+        {from: 01, to: 03},
+        {from: 02, to: 04},
+        {from: 03, to: 05},
+        {from: 04, to: 05},
+        {from: 04, to: 06},
+        {from: 05, to: 07},
+        {from: 06, to: 07},
+        {from: 06, to: 11},
+        {from: 07, to: 08},
+        {from: 07, to: 09},
+        {from: 07, to: 10}
     ]);
 
     // create a network
@@ -83,7 +92,6 @@ window.onload = function() {
     });
     network.on("hoverNode", function (params) {
         console.log('hoverNode Event:', params);
-};
     });
     network.on("hoverEdge", function (params) {
         console.log('hoverEdge Event:', params);
@@ -94,4 +102,4 @@ window.onload = function() {
     network.on("blurEdge", function (params) {
         console.log('blurEdge Event:', params);
     });
-
+};
