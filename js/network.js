@@ -1,4 +1,7 @@
 //window.onload = function() {
+
+    // https://jsfiddle.net/qpd63j7r/
+
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 00, label: 'being a developer', title: 'devving is collaboration and communication'},
