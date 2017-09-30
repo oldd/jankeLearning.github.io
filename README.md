@@ -1,3 +1,5 @@
+eventually host nodes on a server?
+
 sankey?
 
 tabs
