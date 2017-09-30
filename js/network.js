@@ -26,10 +26,10 @@
         {from: 04, to: 06, arrows: 'to, middle'},
         {from: 05, to: 07, arrows: 'to, middle'},
         {from: 06, to: 07, arrows: 'to, middle'},
-        {from: 06, to: 11, arrows: 'to, middle'},
+        {from: 05, to: 11, arrows: 'to, middle'},
         {from: 07, to: 08, arrows: 'to, middle'},
         {from: 07, to: 09, arrows: 'to, middle'},
-        {from: 07, to: 10, arrows: 'to, middle' }
+        {from: 05, to: 10, arrows: 'to, middle' }
     ]);
 
     // create a network
