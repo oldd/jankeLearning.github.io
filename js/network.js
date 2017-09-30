@@ -4,18 +4,42 @@
 
     // create an array with nodes
     var nodes = new vis.DataSet([
-        {id: 00, label: 'being a developer', title: 'devving is collaboration and communication'},
-        {id: 01, label: 'gh portfolio', title: 'your public face to the development world'},
-        {id: 02, label: 'cleancalc 0-2', title: 'separate logic and framework'},
-        {id: 03, label: 'be google', title: 'make a pretty page'},
-        {id: 04, label: 'tictactoes', title: 'learn MVC'},
-        {id: 05, label: 'battleship', title: 'feature-based development, from the front to the back'},
-        {id: 06, label: 'mvc-lh calc', title: 'tictactoes meets cleancalc'},
-        {id: 07, label: 'data model', title: 'think about your data, prepare for *book'},
-        {id: 08, label: 'mini group project', title: 'a mini group project'},
-        {id: 09, label: 'assessment', title: 'all the skills you\'ll need for node'},
-        {id: 10, label: '*Book', title: 'bringing it all together'},
-        {id: 11, label: 'be youtube', title: 'using node as a build environmnet, axios'}
+        {id: 00, label: 'being a developer', 
+                    title: 'devving is collaboration and communication',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/00-communications.md'},
+        {id: 01, label: 'gh portfolio', 
+                    title: 'your public face to the development world',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/01-gh-portfolio.md'},
+        {id: 02, label: 'cleancalc 0-2', 
+                    title: 'separate logic and framework',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/02-cleancalc-0-2.md'},
+        {id: 03, label: 'be google', 
+                    title: 'make a pretty page',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/03-be-google.md'},
+        {id: 04, label: 'tictactoes', 
+                    title: 'learn MVC',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/04-tictactoes.md'},
+        {id: 05, label: 'battleship', 
+                    title: 'feature-based development, from the front to the back',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/05-battleship.md'},
+        {id: 06, label: 'mvc-lh calc', 
+                    title: 'tictactoes meets cleancalc',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/06-mvc-lh-calc.md'},
+        {id: 07, label: 'data model', 
+                    title: 'think about your data, prepare for *book',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/07-data-model.md'},
+        {id: 08, label: 'mini group project', 
+                    title: 'a mini group project',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/08-mini-group-project.md'},
+        {id: 09, label: 'assessment', 
+                    title: 'all the skills you\'ll need for node',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/09-assessment.md'},
+        {id: 10, label: '*Book', 
+                    title: 'bringing it all together',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/10-starbook.md'},
+        {id: 11, label: 'be youtube', 
+                    title: 'using node as a build environmnet, axios',
+                    url: 'https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/11-be-youtube.md'}
     ]);
 
     // create an array with edges
@@ -60,10 +84,12 @@
     };
     var network = new vis.Network(container, data, options);
 
-    // event listeners
-    network.on("click", open_markdown);
-  
-    function open_markdown() {
-        console.log('this will open a markdown')
-    };
+    // event listener
+    network.on("selectNode", function (params) {
+        if (params.nodes.length === 1) {
+            var node = nodes.get(params.nodes[0]);
+            window.open(node.url, '_blank');
+        }
+    });
+       
 //};
