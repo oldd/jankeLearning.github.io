@@ -17,19 +17,19 @@
 
     // create an array with edges
     var edges = new vis.DataSet([
-        {from: 00, to: 01, arrows: 'to'},
-        {from: 01, to: 02, arrows: 'to'},
-        {from: 01, to: 03, arrows: 'to'},
-        {from: 02, to: 04, arrows: 'to'},
-        {from: 03, to: 05, arrows: 'to'},
-        {from: 04, to: 05, arrows: 'to'},
-        {from: 04, to: 06, arrows: 'to'},
-        {from: 05, to: 07, arrows: 'to'},
-        {from: 06, to: 07, arrows: 'to'},
-        {from: 06, to: 11, arrows: 'to'},
-        {from: 07, to: 08, arrows: 'to'},
-        {from: 07, to: 09, arrows: 'to'},
-        {from: 07, to: 10, arrows: 'to'}
+        {from: 00, to: 01, arrows: 'to, middle'},
+        {from: 01, to: 02, arrows: 'to, middle'},
+        {from: 01, to: 03, arrows: 'to, middle'},
+        {from: 02, to: 04, arrows: 'to, middle'},
+        {from: 03, to: 05, arrows: 'to, middle'},
+        {from: 04, to: 05, arrows: 'to, middle'},
+        {from: 04, to: 06, arrows: 'to, middle'},
+        {from: 05, to: 07, arrows: 'to, middle'},
+        {from: 06, to: 07, arrows: 'to, middle'},
+        {from: 06, to: 11, arrows: 'to, middle'},
+        {from: 07, to: 08, arrows: 'to, middle'},
+        {from: 07, to: 09, arrows: 'to, middle'},
+        {from: 07, to: 10, arrows: 'to, middle' }
     ]);
 
     // create a network
