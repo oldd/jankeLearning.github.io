@@ -1,5 +1,9 @@
-var nodes = [
-		{id:0, title:<a href="https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/00-communications.md">communications</a>},
-		{id:1, title:<a href="https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/01-gh-portfolio.md">gh-portfolio</a>},
-		{id:2, title:<a href="https://github.com/jankeLearning/nodes/blob/master/sepco-projects-only/02-cleancalc-0-2.md">cleancalc 0-2</a>},
-	];
+  // create an array with nodes
+    var nodes = new vis.DataSet([
+        {id: 0, label: 'communications', title: 'I have a popup!'},
+        {id: 1, label: 'Node 1', title: 'I have a popup!'},
+        {id: 2, label: 'Node 2', title: 'I have a popup!'},
+        {id: 3, label: 'Node 3', title: 'I have a popup!'},
+        {id: 4, label: 'Node 4', title: 'I have a popup!'},
+        {id: 5, label: 'Node 5', title: 'I have a popup!'}
+    ]);
