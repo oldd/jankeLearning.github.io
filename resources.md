@@ -17,8 +17,11 @@
 [sigma](http://sigmajs.org)  
 [vis]()  
 [d3]()  
+[gojs](https://github.com/NorthwoodsSoftware/GoJS)  
   
 [giants comparison](https://www.georg-hackenberg.de/posts/2015_12_21_javascript_graph_libraries_cytoscape_sigma_d3/)  
 
 -- vis.js --  
 [html in nodes](http://visjs.org/examples/network/nodeStyles/imagesWithBorders.html)  
+[enormous list of editors](https://jgraph.github.io/mxgraph/javascript/index.html)  
+[-- this! -- but not possible](https://github.com/almende/vis/issues/1699)  
