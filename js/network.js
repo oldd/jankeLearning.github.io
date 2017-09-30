@@ -1,4 +1,4 @@
-window.onload = function() {
+//window.onload = function() {
     // create an array with nodes
     var nodes = new vis.DataSet([
         {id: 00, label: 'being a developer', title: 'devving is collaboration and communication'},
@@ -102,4 +102,4 @@ window.onload = function() {
     network.on("blurEdge", function (params) {
         console.log('blurEdge Event:', params);
     });
-};
+//};
