@@ -1,24 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="mermaid.min.css">
-  <script src="mermaid.min.js"></script>
-  <script>mermaid.initialize({startOnLoad:true});</script>
-</head>
-<body>
-  <div class="mermaid">
-  graph LR
-      A --- B
-      B-->C[fa:fa-ban forbidden]
-      B-->D(fa:fa-spinner);
-  </div>
-  <div class="mermaid" id="mermaidChart0">
-    <svg>
-        Chart ends up here
-    </svg>
-  </div>
-  <a href="https://faculty1.coloradocollege.edu/~sjanke/MathArt.html">jankeLearning artwork</a>
-</body>
-</html>
+<!doctype html>
+<html>
+ <head>
+  <title>vis.js Graph demo</title>
+  <script src="http://visjs.org/dist/vis.js"></script>
+  <link href="http://visjs.org/dist/vis.css" rel="stylesheet" type="text/css" />
+ </head>
 
+ <body>
+ <div id="graph"></div> 
+  <script type="text/javascript">
+   var nodes = [
+    {id: 1, label: 'a'},
+    {id: 2, label: 'b'},
+    {id: 3, label: 'c'},
+   ];
+   var edges = [
+    {from: 1, to: 2},
+    {from: 1, to: 3},
+    {from: 2, to: 3},
+   ];
+   var container = document.getElementById('graph');
+   var data = {
+    nodes: nodes,
+    edges: edges,
+   };
+   var graph = new vis.Graph(container, data, {});
+  </script>
+ </body>
+</html>
