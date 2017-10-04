@@ -4,8 +4,15 @@ sankey?
 
 tabs
 	graph
-	landing page
-	changing world
+		graph
+	jl/elewa landing page
+	docs for the repo and curric. 
+		organization
+		how to use
+	bibliography
+		works cited
+	wiki - where fit in?
+	contact
 
 three audiences
 	users
