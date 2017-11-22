@@ -26,3 +26,17 @@ to fix, or not
   * contact
 
 
+sanni
+* define sections
+  - parallaxed
+* better font
+  - effort made
+* emphasize key words
+  * grab attention
+
+
+extra copy
+            <p>There is already too many amazing learning materials out there. Rather than competing, we aim to complement. In our experience teaching and learning development we have found there is something missing.  this is our attempt to give back. </p>
+
+            <p>Our content is designed to bridge the gap between programming and development. We combine the top in pedagogy and software development to provide you the best learning resources we know how to make. (and of course to try out new forms of embedded epdagogy - let us know what works and what doesnt)</p>
+          
